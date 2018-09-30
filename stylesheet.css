@@ -1,0 +1,295 @@
+/*.formwrapper {*/
+	/*border: 2px solid black;*/
+	/*padding: 10px;*/
+	/*border-radius: 10px;
+	width: 294px;*/
+/*}*/
+
+/*formularz*/
+
+form {
+	margin-bottom: 10px;
+	padding: 0 10px;
+	border: 1px solid black;
+	/*background-color: #79f1fc;
+	border-radius: 10px;*/
+	width: 270px;
+}
+
+input {
+	background-color: pink;
+	text-align: center;
+}
+
+/*kalendarz*/
+
+.calendar {
+	border: 1px solid black;
+	/*height: 380px;*/
+	width: 270px;
+	padding: 0 11px;
+	display: none;
+}
+
+/*nagłówek miesiąca*/
+
+.calendar h2 {
+	text-align: center;
+	border: 1px solid black;
+	font-family: 'Arimo', sans-serif;
+	font-size: 24px;
+}
+
+/*buttony lewo/prawo*/
+
+.calendar #buttonleft {
+	height: 29px;
+	width: 29px;
+	margin: auto;
+	float: left;
+	display: inline;
+	cursor: pointer;
+	border: none;
+	/*font-weight: 300;*/
+	/*font-family: Sans-serif;*/
+	font-size: 20px;
+}
+
+.calendar #buttonleft:hover {
+	background-color: #d1cec6;
+}
+
+.calendar #buttonright {
+	height: 29px;
+	width: 29px;
+	margin: auto;
+	float: right;
+	display: inline;
+	cursor: pointer;
+	border: none;
+	/*font-weight: 300;*/
+	/*font-family: Sans-serif;*/
+	font-size: 20px;
+}
+
+.calendar #buttonright:hover {
+	background-color: #d1cec6;
+}
+
+/*zwykła ikona/data w kalendarzu*/
+
+.calendar p {
+	margin: 5px;
+	text-align: center;
+	font-size: 20px;
+	width: 26px;
+	height: 26px;
+	border: 1px solid #103268;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 10%;
+	font-family: 'Arimo', sans-serif;
+}
+
+/*ikony dnia tygodnia*/
+
+.calendar p.week {
+	margin: 2px;
+	width: 34px;
+	height: 34px;
+	border: none;
+	cursor: default;
+	font-size: 16px;
+}
+
+/*wypychacz do justowania (niewidzialny)*/
+
+.calendar p.blank {
+	opacity: 0;
+	/*margin: 2px;
+	width: 34px;
+	height: 34px;
+	border: none;*/
+	/*font-size: 16px;*/
+	background-color: yellow;
+	cursor: default;
+}
+
+/*normalny dzień*/
+
+.calendar p.normal {
+	background-color: #5aa7f4;
+}
+
+.calendar p.normal:hover {
+	background-color: #b7d7f7;
+}
+
+/*sobota*/
+
+.calendar p.saturday {
+	background-color: #efb447;
+}
+
+.calendar p.saturday:hover {
+	background-color: #f7d89e;
+}
+
+/*niedziela*/
+
+.calendar p.sunday {
+	background-color: #ed6d71;
+}
+
+.calendar p.sunday:hover {
+	background-color: #f7a8aa;
+}
+
+/*jak powyżej, ale w przypadku dzisiejszej daty*/
+
+.calendar p.todaynormal {
+	border: 3px solid #103268;
+	margin: 3px;
+	background-color: #5aa7f4;
+}
+
+.calendar p.todaynormal:hover {
+	background-color: #b7d7f7;
+}
+
+.calendar p.todaysaturday {
+	border: 3px solid #103268;
+	margin: 3px;
+	background-color: #efb447;
+}
+
+.calendar p.todaysaturday:hover {
+	background-color: #f7d89e;
+}
+
+.calendar p.todaysunday {
+	border: 3px solid #103268;
+	margin: 3px;
+	background-color: #ed6d71;
+}
+
+.calendar p.todaysunday:hover {
+	background-color: #f7a8aa;
+}
+
+/*stopka kalendarza*/
+
+.calendar p.footnote {
+	height: 18px;
+	width: 120px;
+	padding-top: 3px;
+	border-radius: 0;
+	margin: 0 auto;
+	border-bottom: none;
+	font-size: 12px;
+	background-color: #edecea;
+	display: block;
+}
+
+.calendar p.footnote:hover {
+	background-color: #d1cec6;
+}
+
+/*responsywność*/
+
+@media screen and (max-width: 1000px) {
+    .calendar {
+		/*width: 270px;*/
+		width: 325px;
+	}
+	
+	.calendar h2 {
+		/*font-size: 24px;*/
+		font-size: 30px;
+	}
+	
+	.calendar #buttonleft {
+		/*height: 29px;
+		width: 29px;*/
+		height: 36px;
+		width: 36px;
+	}
+	
+	.calendar #buttonright {
+		/*height: 29px;
+		width: 29px;*/
+		height: 36px;
+		width: 36px;
+	}
+	
+	.calendar p {
+		/*margin: 5px;
+		font-size: 20px;
+		width: 26px;
+		height: 26px;
+		border: 1px solid #103268;*/
+		/*padding-top: 4px;*/
+		width: 30px;
+		height: 30px;
+		margin: 7px;
+		font-size: 24px;
+}
+	
+	.calendar p.week {
+		/*margin: 2px;
+		width: 34px;
+		height: 34px;
+		border: none;
+		cursor: default;
+		font-size: 16px;*/
+		font-size: 18px;
+		width: 32px;
+		height: 32px;
+		margin: 7px;
+	}
+	
+	.calendar p.blank {
+		/*margin: 4px;
+		width: 30px;
+		height: 30px;*/
+		/*width: 32px;
+		height: 32px;
+		margin: 7px;*/
+	}
+	
+	.calendar p.todaynormal {
+		/*border: 3px solid #103268;
+		margin: 3px;
+		background-color: #5aa7f4;*/
+		border: 5px solid #103268;
+		margin: 3px;
+	}
+	
+	.calendar p.todaysaturday {
+		/*border: 3px solid #103268;
+		margin: 3px;
+		background-color: #efb447;*/
+		border: 5px solid #103268;
+		margin: 3px;
+	}
+	
+	.calendar p.todaysunday {
+		/*border: 3px solid #103268;
+		margin: 3px;
+		background-color: #ed6d71;*/
+		border: 5px solid #103268;
+		margin: 3px;
+	}
+	
+	.calendar p.footnote {
+		/*width: 100%;
+		border-radius: 0;
+		margin: 0;
+		border-bottom: none;
+		font-size: 12px;*/
+		height: 22px;
+		width: 150px;
+		padding-top: 5px;
+		font-size: 14px;
+	}
+}
